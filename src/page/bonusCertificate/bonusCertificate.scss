@@ -1,0 +1,32 @@
+body{
+
+  overflow-y: auto;
+  background-color: #162703;
+}
+
+section {
+  transition: all 0.5s linear 0s;
+  z-index: 3;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  overflow: auto;
+
+  .btn {
+    display: inline-block;
+    position: absolute;
+    height: 11%;
+    bottom: 13%;
+    left: 26%;
+    width: 49%;
+  }
+}
+.telDialog{
+  z-index: 5;
+}
+.telDialog .cont p {
+  padding: 5%;
+  font-size: 16px;
+}

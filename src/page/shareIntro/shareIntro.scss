@@ -1,0 +1,24 @@
+section {
+  height: 100%;
+  overflow: auto;
+}
+
+.content {
+  position: relative;
+  overflow: auto;
+  .btn-invita,.btn-invita-large {
+    display: inline-block;
+    position: absolute;
+    height: 4rem;
+  }
+  .btn-invita {
+    top: 29%;
+    left: 34%;
+    width: 30%;
+  }
+  .btn-invita-large {
+    top: 87%;
+    left: 31%;
+    width: 40%;
+  }
+}

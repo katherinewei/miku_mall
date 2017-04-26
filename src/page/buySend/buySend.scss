@@ -1,0 +1,17 @@
+section {
+  height: 100%;
+  overflow: auto;
+}
+
+.content {
+  position: relative;
+  overflow: auto;
+  .btn {
+    display: inline-block;
+    position: absolute;
+    height: 15%;
+    bottom: 5%;
+    left: 34%;
+    width: 30%;
+  }
+}

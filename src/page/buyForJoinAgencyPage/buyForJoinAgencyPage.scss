@@ -1,0 +1,51 @@
+@import "../../common/style/_mixin";
+.buyGift{
+  background-color: #d61b0f;
+  color: #fff;
+  padding:45px 0 0 ;
+  overflow-y:auto;
+  .banner{
+    background-color: #fceabd;
+  }
+  .grid{
+    margin: 2% 5% 0;
+    border-top: 1px dashed #fceabd;
+    .row{
+      border-bottom: 1px dashed #fceabd;
+      padding:2%;
+      .col{
+        margin-left: 4%;
+        margin-top: 15px;
+        font-size: 16px;
+        del{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .thumb{
+    width:100px;
+    height:100px;
+    img{
+      background-color:#fceabd;
+
+    }
+  }
+  .activityRule{
+    padding: 2% 2%;
+    margin: 0 5%;
+  }
+  .title{
+    width:70px;
+  }
+}
+.not-has-msg{
+  text-align: center;
+  margin-top: 30%;
+  img{
+    display: inline-block;
+    width:30%;
+    margin-bottom: 5%;
+  }
+}

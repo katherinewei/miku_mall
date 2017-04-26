@@ -1,0 +1,269 @@
+@import "../../common/style/_mixin";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+ // overflow-y: auto;
+  background-color: #de0010;
+  //height:100%
+
+}
+input {
+  outline: none
+}
+.gotoIndex{
+  width:87.7%;
+  margin: 2% auto;
+}
+#scratchCardPage {
+  background-color: #de0010;
+  min-width: 22.86rem;
+   height: 100%;
+  margin: 0px auto;
+  //padding-bottom: 5%;
+  overflow-y: auto;
+
+}
+
+label {
+  display: block;
+}
+
+.header_SC, .footer_SC {
+  text-align: center;
+  margin: 0px auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  img {
+    width: 100%;
+  }
+
+}
+
+.scratchCardMain {
+  width: 87.7%;
+  background: #fff;
+  margin-left: 6%;
+ // height: 63%;
+  overflow: hidden;
+  .inner {
+    background: #FDD000;
+    color: #E20012;
+    margin: 0 3%;
+    padding: 3%;
+    //height: 100%;
+    .mainWord {
+      width: 70%;
+      margin: 0 auto;
+      padding-bottom: 3%;
+    }
+    .grid {
+      .row {
+        margin-bottom: 3%;
+        width: 100%;
+
+      }
+    }
+    form {
+      //height: 90%;
+      label {
+        font-size: 1.6rem;
+        color: #C31C09;
+      }
+      input {
+        text-align: left;
+        background: #fee4a4;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 3px;
+        border: none;
+        padding-left: 2%;
+        display: block;
+        &.yzm {
+          float: left;
+        }
+      }
+      div {
+        &.yzm {
+          float: right;
+          background: #fee4a4;
+          height: 30px;
+        }
+      }
+
+      .yzm {
+        width: 48%;
+      }
+
+      fieldset {
+        border: none;
+        border-top: 1px solid #de0010;
+        text-align: center;
+        margin-top: 5%;
+      //  height: 200px;
+       // overflow: hidden;
+        width: 100%;
+        legend {
+          font-size: 1.8rem;
+          line-height: 2.50rem;
+          margin-bottom: 3%;
+          padding: 0 3%;
+          width: 8rem;
+        }
+        .grid {
+          width: 100%;
+          //height: 100%;
+          overflow-y: auto;
+          margin-top: 2%;
+          padding-bottom:15%;
+        }
+        .row {
+          .col-16 {
+            color: #fff;
+            font-size: 16px;
+          }
+          div {
+            text-align: left;
+            line-height: 2.5rem;
+            font-size: 1.4rem;
+          }
+        }
+      }
+
+    }
+
+    .btn {
+      width: 7.14rem;
+      height: 30px;
+      line-height: 30px;
+      font-size: 1.4rem;
+      border-radius: 3px;
+      color: #FF0418;
+      background: #fff;
+      margin: 0 auto;
+      display: block;
+      text-align: center;
+      padding: 0;
+
+      &.btnEx {
+        color: #fff;
+        background: #E20012;
+        &.disabled {
+          background-color: #d1d1d1;
+        }
+      }
+    }
+
+  }
+  .resultBox {
+
+    .tips {
+      font-size: 1.6rem;
+      margin:1% 3%;
+    }
+    a {
+      width: 9rem;
+      margin: 0 auto
+    }
+    span {
+      color: #fff;
+    }
+    img {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .name{
+      text-align: center;
+      margin-top: 3%;
+    }
+  }
+  .writeBox {
+    padding-top: 10%;
+    .btn {
+      margin: 10% auto;
+    }
+    .row:nth-child(3) {
+      position: relative;
+      .right-icon {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        background-image: url("#{$img_path}common/images/scratchCard/icon_right.png");
+        width: 10px;
+        height: 15px;
+        display: block;
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+
+  }
+}
+.consignee-layout{
+  h1{
+    font-size: 16px;
+  }
+}
+.consignee {
+ border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  margin-top: 10px;
+  padding: 10px 0;
+  .row{
+    margin-bottom: 0 !important;
+    padding:0;
+  }
+
+}
+.null-msg {
+  padding: 10px 0;
+  text-align: left;
+}
+@mixin place-icon($left, $top) {
+  background-image: url("#{$img_path}common/images/scratchCard/icon_right.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+.right-icon, .iconfont.right-icon {
+  font-size: 18px;
+  &:after {
+    display: block;
+    content: " ";
+    text-indent: -999px;
+    @include place-icon(right, -344px);
+    width: 10px;
+    height: 17px;
+  }
+}
+.telDialog .cont p{
+  padding:5%;
+}
+
+/*@media screen and (max-height: 481px) {
+  .scratchCardMain {
+     height: 58%;
+  }
+  .scratchCardMain .inner form fieldset {
+    height: 40%;
+  }
+  .scratchCardMain .inner form fieldset .grid {
+     height: 55%;
+  }
+  .scratchCardMain .resultBox .tips {
+     font-size: 1.4rem;
+     margin: 1% 3%;
+  }
+  .scratchCardMain .resultBox img {
+     width: 50%;
+  }
+  .scratchCardMain .writeBox .btn {
+     margin: 10% auto 0%;
+  }
+}*/
+
+

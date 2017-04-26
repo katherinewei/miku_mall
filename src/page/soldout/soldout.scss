@@ -1,0 +1,43 @@
+@import "../../common/style/_mixin";
+
+#soldoutPage{ 
+    .page-content .page-scroll-panel{
+        background:#eee;
+        padding-bottom:50px;
+    }
+    .advance-stack{
+        display:none;
+    }
+    /* .advance-time{
+        background:url(http://welinklife.b0.upaiyun.com/1/LTE=/SVRFTS1QVUJMSVNI/MA==/20150121/vNTT-0-1421828562561.jpg);
+        background-repeat:no-repeat;
+        height:36px;
+        background-size:80px 36px;
+        background-color:#fff;
+        padding-left:90px;
+        line-height:36px;
+        font-size:18px;
+        color:#89d148;
+        margin-top:0;
+    }
+    .advance-banner{
+        margin-top:5px;
+    } */
+    .recommend-more{
+        height:50px;
+        line-height:50px;
+        font-size:17px;
+        color:#89d148;
+        background:#fff;
+    }
+    .recommend-grid{
+        margin-top:-20px;
+        .col{
+            min-height:175px;
+        }
+        h1{
+            font-size:15px;
+            color:#666;
+        }
+    }
+}
